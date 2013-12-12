@@ -1,0 +1,11 @@
+This app is designed to run under a typical java servlet container such as Tomcat, and has been tested under Tomcat 7
+
+Database:
+The app uses Hypersonic HSQLDB. To create the database, run the following:
+java -cp <app install dir>/WEB-INF/lib/hsqldb.jar org.hsqldb.util.DatabaseManagerSwing
+Use the following parameters:
+-- Type: HSQLDB Database Engine Standalone
+-- Driver: org.hsqldb.jdbcDriver
+-- URL: jdbc:hsqldb:file:<file location. I use /opt/PingOne/Sample/db>
+-- User: SA
+-- Password: 2Federate
